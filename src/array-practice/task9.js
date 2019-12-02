@@ -10,3 +10,14 @@
  * console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1)); -> [0, 3]
  * console.log(indexOfAll([1, 2, 3], 4)); -> []
  */
+export function indexOfAll(arrA, b) {
+  var arrB = [];
+  var j = 0;
+  for (var i = 0; i < arrA.length; i++) {
+    if (arrA[i] == b) {
+      arrB[j] = i;
+      j++;
+    }
+  }
+  return arrB;
+}
