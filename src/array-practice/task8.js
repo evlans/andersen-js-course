@@ -11,3 +11,10 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+export function without(arrA) {
+  var arrB = [];
+  for (var i = 0; i < arguments.length; i++) {
+    arrB[i] = arguments[i];
+  }
+  return arrA.filter(x => !arrB.includes(x));
+}
